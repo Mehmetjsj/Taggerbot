@@ -1,2 +1,4 @@
-# Taggerbot
-paweted540@fun5k.com
+#NeontagBot
+TELEGRAMIN GELIŞMIŞ TAGGER BOTU
+
+DEVELOPED BY @FLEX DEVS
