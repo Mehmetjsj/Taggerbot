@@ -329,7 +329,7 @@ async def son_durum(event):
     sender = await event.get_sender()
     if sender.id not in ozel_list:
       return
-    await event.respond(f"**NeonTagBot İstatistikleri 🤖**\n\nToplam Grup: `{len(grup_sayi)}`\nAnlık Çalışan Grup: `{len(anlik_calisan)}`")
+    await event.respond(f"**@Taggerrbot İstatistikleri 🤖**\n\nToplam Grup: `{len(grup_sayi)}`\nAnlık Çalışan Grup: `{len(anlik_calisan)}`")
 
 
 @client.on(events.NewMessage(pattern='^/reklam ?(.*)'))
@@ -350,14 +350,14 @@ async def duyuru(event):
 
 @client.on(events.NewMessage(pattern='^/botcum'))
 async def event(ups):
-  if ups.sender_id == 5288143542:
-   await ups.reply("**Flex Sahibim Naber Ben Çalışıyorum ❤️🥵**")
-  elif ups.sender_id == 1224042254:
-    await ups.reply("**Mehmet Sahibim Naber Ben Çalışıyorum 🖤🥵**")
-  elif ups.sender_id ==  5228340901:
-    await ups.reply("**Büşra Sahibim Naber Ben Çalışıyorum ❤️🥵**")
+  if ups.sender_id == 5240752777:
+   await ups.reply("**armanç Sahibim Naber Ben Çalışıyorum ❤️🥵**")
+  elif ups.sender_id == 2008032694:
+    await ups.reply("**rıdvan Sahibim Naber Ben Çalışıyorum 🖤🥵**")
+  elif ups.sender_id ==  5241184040:
+    await ups.reply("**seda Sahibim Naber Ben Çalışıyorum ❤️🥵**")
   else:
-    await ups.reply("**Ya Oruspu Çocuğu Sen Benim Sahibim Değilsin Siktir Git Hade 🖕**")
+    await ups.reply("**sen benim sahibim değilsin **")
 
 
 app.run()
