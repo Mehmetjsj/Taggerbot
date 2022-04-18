@@ -58,7 +58,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Komutlar:\n\n/utag -text- Kullanıcıları Etiketlerim.\n/atag -text- Yöneticileri Etiketlerim.\n/cancel - Etiket İşlemini İptal Ederim .\n❕ Yalnızca Yöneticiler Bu Komutları KullanaBilir**"
+  helptext = "**Komutlar:\n\n/utag -text- Kullanıcıları Etiketlerim.\n/atag -text- Yöneticileri Etiketlerim.\n/tektag tek tek etiketlerim.\n/cancel - Etiket İşlemini İptal Ederim .\n❕ Yalnızca Yöneticiler Bu Komutları KullanaBilir**"
   await event.reply(helptext)
 
 @client.on(events.NewMessage())
