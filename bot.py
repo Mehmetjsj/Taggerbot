@@ -206,7 +206,7 @@ async def mentionalladmin(event):
 
 
 
-@app.on_message(filters.command(["mention", "mentiona"], ["@", "/"]) & ~filters.private)
+@app.on_message(filters.command(["tektag", "mentiona"], ["@", "/"]) & ~filters.private)
 def tag(_, message: Message):
 
     kısa = False
