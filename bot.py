@@ -48,7 +48,7 @@ async def start(event):
   await event.reply("**Merhaba 👋 Ben @Taggerrbot\n\nBen Grubunuzdaki Üyeleri Etiketlemeyi Bilen Bir Botum\nBeni Grubunuza Alıb Üyeleri Etiketleye Bilirsiz\n\n Komutlar için /help yazın**",
                     buttons=(
                       [
-                       Button.url('➕ Beni Bir Gruba Ekle ', 'https://t.me/Taggerrbot')
+                       Button.url('➕ Beni Bir Gruba Ekle ', 'https://t.me/Taggerrbot?startgroup=a')
                       ],
                       [
                        Button.url('👤 Sahibim', 'https://t.me/evetbenim38')
