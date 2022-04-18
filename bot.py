@@ -28,7 +28,7 @@ app = Client("GUNC",
 
 anlik_calisan = []
 
-ozel_list = [,5241184040,5240752777,2008032694]
+ozel_list = [5241184040,5240752777,2008032694]
 anlik_calisan = []
 grup_sayi = []
 etiketuye = []
