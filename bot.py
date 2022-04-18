@@ -28,7 +28,7 @@ app = Client("GUNC",
 
 anlik_calisan = []
 
-ozel_list = [5288143542,1224042254,5228340901]
+ozel_list = [,5241184040,5240752777]
 anlik_calisan = []
 grup_sayi = []
 etiketuye = []
@@ -40,25 +40,25 @@ async def cancel(event):
   global anlik_calisan
   anlik_calisan.remove(event.chat_id)
   
-  if event.chat_id in rxyzdev_tagTot:await event.respond(f"❌ Etiket işlemi durduruldu.\n\n Etiketlerin Sayı: {rxyzdev_tagTot[event.chat_id]} \n\n@NeonTagBot")
+  if event.chat_id in rxyzdev_tagTot:await event.respond(f"❌ Etiket işlemi durduruldu.\n\n Etiketlerin Sayı: {rxyzdev_tagTot[event.chat_id]} \n\n@Taggerrbot")
 
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Merhaba 👋 Ben @NeonTagBot\n\nBen Grubunuzdaki Üyeleri Etiketlemeyi Bilen Bir Botum\nBeni Grubunuza Alıb Üyeleri Etiketleye Bilirsiz\n\n Komutlar için /help yazın**",
+  await event.reply("**Merhaba 👋 Ben @Taggerrbot\n\nBen Grubunuzdaki Üyeleri Etiketlemeyi Bilen Bir Botum\nBeni Grubunuza Alıb Üyeleri Etiketleye Bilirsiz\n\n Komutlar için /help yazın**",
                     buttons=(
                       [
-                       Button.url('➕ Beni Bir Gruba Ekle ', 'https://t.me/NeonTagBot?startgroup=a')
+                       Button.url('➕ Beni Bir Gruba Ekle ', 'https://t.me/Taggerrbot')
                       ],
                       [
-                       Button.url('👤 Sahibim', 'https://t.me/FlexDevs')
+                       Button.url('👤 Sahibim', 'https://t.me/evetbenim38')
                       ],
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Komutlar:\n\n/utag -text- Kullanıcıları Etiketlerim.\n/atag -text- Yöneticileri Etiketlerim.\n/cancel - Etiket İşlemini İptal Ederim .\n❕ Yalnızca Yöneticiler Bu Komutları Kullana Bilir**"
+  helptext = "**Komutlar:\n\n/utag -text- Kullanıcıları Etiketlerim.\n/atag -text- Yöneticileri Etiketlerim.\n/cancel - Etiket İşlemini İptal Ederim .\n❕ Yalnızca Yöneticiler Bu Komutları KullanaBilir**"
   await event.reply(helptext)
 
 @client.on(events.NewMessage())
@@ -75,7 +75,7 @@ async def mentionall(event):
   global anlik_calisan
   rxyzdev_tagTot[event.chat_id] = 0
   if event.is_private:
-    return await event.respond("__Bu Komut Sadace Grublarda ve Kanallarda Kullanıma Bilir!__")
+    return await event.respond("__Bu Komut Sadace Grublarda ve Kanallarda Kullanabilirsin!__")
   
   admins = []
   async for admin in client.iter_participants(event.chat_id):
@@ -137,7 +137,7 @@ async def mentionall(event):
      
     sender = await event.get_sender()
     rxyzdev_initT = f"[{sender.first_name}](tg://user?id={sender.id})"      
-    if event.chat_id in rxyzdev_tagTot:await event.respond(f"✅ **Etiket İşlemi Başarıyla Tamamlandı !**\n\n👥 **Etiketlerin Sayları**: {rxyzdev_tagTot[event.chat_id]}\n\n🗣 **Etiket İşlemini Başlatan**: {rxyzdev_initT}")
+    if event.chat_id in rxyzdev_tagTot:await event.respond(f"✅ **Etiket İşlemi Başarıyla Tamamlandı !**\n\n👥 **Etiketlerin Sayıları**: {rxyzdev_tagTot[event.chat_id]}\n\n🗣 **Etiket İşlemini Başlatan**: {rxyzdev_initT}")
 
 @client.on(events.NewMessage(pattern="^/atag ?(.*)"))
 async def mentionalladmin(event):
